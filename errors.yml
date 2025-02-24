@@ -1,0 +1,54 @@
+# This file is in YAML format.  You must ensure that the punctuation
+# and whitespace is preserved.  Also, beware of ':' and quotation mark
+# characters: these have meaning in YAML and so must be "escaped" by
+# enclosing the entire field in (single) quotation marks, or using the multi-line string formatting characters ('|' for preserving newlines, '>' for folding newlines).
+# See the YAML specification  (https://yaml.org/spec/1.2.2/) or the wikipedia page about YAML (https://en.wikipedia.org/wiki/YAML).
+# Also, Educative has a nice YAML tutorial (https://www.educative.io/blog/yaml-tutorial) that gives a nice rationale for learning YAML.
+
+# Do NOT use Windows Notepad to edit this file; use a real programming
+# editor like Notepad++ instead.
+
+# Write your group name exactly as it appears on Canvas.
+group: error group
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: [foo, bar, fro, baz]
+
+# Write a short description of your application
+topic: There is *NO* topic!
+
+# For the following sections, you may write multiple paragraphs, each
+# with multiple lines, under the key. But be sure *every* line is
+# indented at the same level as the first line under the key (see
+# `example.yml` for examples).
+
+# Note that the '>' character means the text spanning multiple lines
+# should be concatenated into a single paragraph.  Paragraphs are
+# separated by blank lines, and *all* lines must be indented.
+
+# Write your assessment of the rivalry between existing competitors.
+competitor_rivalry: >
+ Rivalry between existing competitors.
+
+# Write your assessment of the threat of new entrants.
+new_entrant_threat: >
+ Threat of new entrants.
+ 
+# Write your assessment of the threat of substitute products or services.
+substitute_threat: >
+ Threat of substitute products or services.
+ 
+# Write your assessment of the bargaining power of customers.  
+customer_power: >
+ Bargaining power of customers.
+ 
+# Write your assessment of the bargaining power of suppliers.
+supplier_power: >
+ Bargaining power of suppliers.
+
+# Write your conclusion regarding the appropriate competitive strategy to pursue, based on
+# your assessments above.
+competitive_strategy: >
+ appropriate competitive strategy to pursue, based on
+your assessments above.

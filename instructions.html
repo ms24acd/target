@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Dr. John Noll" />
+  <title>Five Forces Analysis</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This works in China! -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display"  rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="one column"  style="margin-top: 25%"> -->
+      <div class="one column">
+	<!-- navigation bar someday -->
+      </div>
+
+     <!-- <div class="eleven columns" style="margin-top: 25%"> -->
+      <div class="eleven columns">
+<header id="title-block-header">
+<h1 class="title">Five Forces Analysis</h1>
+<p class="subtitle">5COM2006 – Design and Configuration Project</p>
+<p class="author">Dr. Satrya Fajri Pratama</p>
+</header>
+<h1 id="caution">CAUTION</h1>
+<p>If you don’t set your identities on Git and Trello correctly, your contribution to your group’s effort will not be recorded.</p>
+<ul>
+<li><p>Set your Git <code>user.email</code> property to your <code>herts.ac.uk</code> email address, and your <code>user.email</code> property to your name:</p>
+<pre><code>  git config --global user.email st23abc@hert.ac.uk
+  git config --global user.name &quot;Stig Tracy&quot;</code></pre></li>
+<li><p>Set your Trello “display name” to your Herts login ID (the part of your email address before the ‘@’).</p></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>This assignment has two objectives:</p>
+<ol type="1">
+<li><p>Gain experience applying Porter and Millar’s <em>Five Forces Model</em> to analyze the strategic position of a product or service idea.</p></li>
+<li><p>Learn YAML syntax.</p></li>
+</ol>
+<h2 id="yaml">YAML</h2>
+<p>YAML (a recursive acronym for “YAML Ain’t Markup Language”) is a data serialization language used extensively to specify system configurations. It is equivalent to JSON (JavaScript Object Notation) but has a much more human-friendly syntax.</p>
+<p>For a nice presentation of the features and syntax of YAML, see <a href="https://www.educative.io/blog/yaml-tutorial">YAML tutorial: Get started in 5 minutes</a> by Educative.</p>
+<p>For this assignment, there are five things to keep in mind:</p>
+<ol type="1">
+<li><p>YAML “documents” are made up of one or more <em>fields</em>, each comprising a <em>key</em> (name) and a <em>value</em>.</p></li>
+<li><p>Keys are <em>always</em> followed by a colon (‘:’). There must be <em>no</em> space between the key and the colon, and there must be at least one space after the colon.</p>
+<pre><code>key: value</code></pre></li>
+<li><p>Values are just strings. They need not be enclosed in quotation marks (contrast with JSON) <em>unless</em> they contain a colon (‘:’), in which case the entire value must be quoted.</p>
+<pre><code>key: &quot;This value has a colon: it must be quoted.&quot;</code></pre></li>
+<li><p>Multi-line strings are possible, and can be specified by putting a ‘&gt;’ or ‘|’ character on the same line as the key, and the lines in the string after the key, <em>indented</em> by at least one space:</p>
+<pre><code>key: &gt;
+ First line of a multi-line string.
+ The second line.
+ Third line.
+
+ First line of a new paragraph, indicated by the preceding blank
+ line.
+ Second line of the new paragraph.
+ Note that all lines are indented at least one space.</code></pre></li>
+<li><p>YAML is <strong>NOT</strong> free-form text. YAML has a strict syntax that <em>must</em> be followed if the document is to be valid.</p></li>
+</ol>
+<p>We are using YAML in an unusual way, to create a text document for human consumption. This is not the main use case for YAML, but it is well suited to this task.</p>
+<h3 id="why-cant-we-use-word">Why can’t we use Word?</h3>
+<p>If we’re creating a document for human readers, why aren’t we using a tool specifically created for that purpose?</p>
+<p>There are several reasons:</p>
+<p>We need to gain experience with system configuration languages. Word is very hard for machines to <em>read</em> (have you ever seen a system configuration file in <code>.docx</code> or <code>.doc</code> format?).</p>
+<p>Conversely, Word documents are very easy for machines to <em>create</em>, if you provide them with the right input. There are numerous utilities that take (semi-)structured text as input and produce <code>.docx</code> as output. Two that I use extensively:</p>
+<ul>
+<li><em>Pandoc</em>, which converts documents in <em>markdown</em> format to a wide variety of different output formats (these instructions were written in markdown, then converted by Pandoc to HTML, PDF, and plain text).</li>
+<li><em>docx-templates</em>, a JavaScript library for the <em>node.js</em> platform that consumes JSON input and populates a Word document containing placeholders for values extracted from the JSON input using their keys.</li>
+</ul>
+<p>So, we can create Word documents, PDF documents, HTML documents, and plain text documents from the same YAML input file.</p>
+<p>In any case, you already know how to use Word, so it’s time to learn something new.</p>
+<h1 id="tasks">Tasks</h1>
+<h2 id="initialize-your-five_forces.yml-file.">Initialize your <code>five_forces.yml</code> file.</h2>
+<ol>
+<li>Determine the product or service to analyze. This can be the bicycle hire service, or another product or service of your own choosing (but not “Quick Jolt!” That’s done already.).</li>
+<li>Clone your group repository (or do a <code>pull</code> if you have already cloned it).</li>
+<li>Copy <code>five_forces.yml</code> from the workspace containing these instructions, to your group repository workspace.</li>
+<li>Change to your group repository workspace, and open <code>five_forces.yml</code> in Notepad++ or TextMate (do NOT use Windows Notepad!).</li>
+<li>Write your group name (as it appears on Canvas) as the value for the <code>group</code> field.</li>
+<li>Write the names of your group’s members, separated by commas, within the square brackets (‘[’ and ’]’) of the <code>members</code> field.</li>
+<li>Write your topic as the value of the <code>topic</code> field.</li>
+</ol>
+<h2 id="analyze-the-five-forces">Analyze the five forces</h2>
+<ol>
+<li><p>Assess the rivalry between existing competitors to your chosen product or service.</p>
+<p>Write your assessment as a multi-line value for the <code>competitor_rivalry</code> field. Remember that multi-line strings start on the line <em>after</em> the key, and each line <em>must</em> be indented at least one space.</p></li>
+<li><p>Assess the threat of new entrants into the market for your chosen product or service.</p>
+<p>Write your assessment as a multi-line value for the <code>new_entrant_threat</code> field.</p></li>
+<li><p>Assess the threat of substitute products or services for your chosen product/service.</p>
+<p>Write your assessment as a multi-line value for the <code>substitute_threat</code> field.</p></li>
+<li><p>Assess the bargaining power of customers of your product or service.</p>
+<p>Write your assessment as a multi-line value for the <code>customer_power</code> field.</p></li>
+<li><p>Assess the bargaining power of suppliers to your product or service.</p>
+<p>Write your assessment as a multi-line value for the <code>supplier_power</code> field.</p></li>
+<li><p>Determine the competitive strategy to pursue for your product or service, chosen from Porter’s four strategies:</p>
+<ol>
+<li>Overall cost leadership.</li>
+<li>Differentiation.</li>
+<li>Focus or niche.</li>
+<li>“Stuck in the middle.”</li>
+</ol>
+<p>Write your determination, along with the reasoning behind it, as a multi-line value for the <code>competitive_strategy</code> field.</p></li>
+</ol>
+<h2 id="validate-commit-and-push">Validate, commit, and push</h2>
+<ol>
+<li><p><em>If</em> you are using MacOS or Linux, install PowerShell: visit https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.3 (for MacOS) or https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-linux?view=powershell-7.3 (for Linux) and follow the instructions for installing.</p>
+<p>If you are using MacOS or Linux, substitute <code>pwsh</code> for <code>PowerShell.exe</code> in the sequel.</p></li>
+<li><p>Install the <code>powershell-yaml</code> module, which provides parsing (<code>ConvertFrom-Yaml</code>) and rendering (<code>ConvertTo-Yaml</code>) functions.</p>
+<p>From the CMD prompt, type</p>
+<pre><code> PowerShell.exe</code></pre>
+<p>Then, at the <em>PowerShell</em> prompt, type</p>
+<pre><code> Install-Module -Name powershell-yaml -Scope CurrentUser</code></pre></li>
+<li><p>Enable <em>PowerShell</em> script execution: from the CMD prompt, type</p>
+<pre><code> PowerShell.exe</code></pre>
+<p>Then, at the <em>PowerShell</em> prompt, type</p>
+<pre><code> Set-ExecutionPolicy -Scope CurrentUser unrestricted</code></pre>
+<p>then type</p>
+<pre><code> exit</code></pre>
+<p>After doing this, you can execute <em>PowerShell</em> scripts, including malicious scripts, using <em>Powershell</em>. So be careful: don’t run scripts unless you trust the author.</p></li>
+<li><p>Validate your <code>five_forces.yml</code> file using the <code>validate_5f.ps1</code> script in this directory. This is a <em>PowerShell</em> script that can be executed from the command line: if you cloned the repository containing these instructions into the same parent directory as the one where you cloned your group repository, you can just type:</p>
+<pre><code>  PowerShell.exe -command ..\five-forces-lab\validate_5f.ps1 five_forces.yml</code></pre>
+<p>at the CMD prompt. Alternately, you can copy the <code>validate_5f.ps1</code> file to your group repository’s workspace, then type:</p>
+<pre><code>  PowerShell.exe -command .\validate_5f.ps1 five_forces.yml</code></pre></li>
+<li><p>Examine the output <em>carefully</em> to ensure that the syntax is correct, and that <em>all</em> fields have the values you expected.</p></li>
+<li><p>Correct any errors, then repeat the first two steps until you are satisfied that your <code>five_forces.yml</code> file is <em>correct</em> and <em>complete</em>.</p></li>
+<li><p>Commit and push your <code>five_forces.yml</code> file.</p></li>
+<li><p>Move the five forces analysis card to the “Review” column on Trello, and assign someone to review it.</p>
+<p>That person should pull (or clone) your group repository, then repeat the validation steps above.</p></li>
+<li><p>When the reviewer is absolutely convinced that your <code>five_forces.yml</code> file is <em>complete</em> and <em>correct</em>, and has been committed and pushed to BitBucket, he or she should move the five forces task card to the “Done” column.</p></li>
+</ol>
+<h2 id="how-to-commit-and-push">How to commit and push</h2>
+<p>The Git <code>commit</code>, <code>pull</code>, and <code>push</code> subcommands are how you “submit” your assignments. These are covered in the Essential Git tutorial under the “Coursework” unit on Canvas.</p>
+<p>Here is the sequence of commands you should execute:</p>
+<ol type="1">
+<li><p>Add files. When you create or edit a file, you need to add it to the next change set. You do this using <code>git add</code>:</p>
+<pre><code> git add five_forces.yml</code></pre>
+<p>Then, type:</p>
+<p>git status</p>
+<p>to see what you have added.</p></li>
+<li><p>Commit your changes. Adding a file to the next change set is the first step toward creating a new change set. Once you have added all of the files you have changed, you need to “commit” those changes to create a new change set:</p>
+<pre><code> git commit</code></pre>
+<p>This will open the text editor that you specified when you configured the <code>core.editor</code> property as part of the <em>app-password-lab</em>. Note: you need to configure <code>core.editor</code> on <em>every</em> workstation that you use, including your own laptop<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> (it is only necessary to do this once on your own computer). Now type:</p>
+<pre><code> git status</code></pre>
+<p>This <em>should</em> show that your workspace is “clean,” as in nothing to commit. If not, examine the output from <code>git commit</code> for clues.</p></li>
+<li><p>Pull your teammates’ changes. While you were working on your own tasks, your teammates are (we hope) working on their tasks. If they commit and push before you do, you will have to “pull” their changes into your own local workspace:</p>
+<pre><code> git pull</code></pre>
+<p><em>Pay attention to any error messages when you do this!</em> Occasionally, git will report a merge conflict which means you need to edit the files with conflicts to fix them, then add and commit these edits.</p></li>
+<li><p>If your pull succeeded without error, now you can push your changes to Bitbucket:</p>
+<pre><code> git push</code></pre>
+<p>Again, <em>pay attention to any error messages</em>. Rarely, someone else in your group will push before you have a chance to push; if so, just pull again, resolve any conflicts, then push as above.</p></li>
+</ol>
+<p>Now you are finished: your changes, and those of your teammates, are on Bitbucket where I can pull them after the deadline.</p>
+<ol start="5" type="1">
+<li><p>To verify that you have, in fact, successfully pushed your changes, have someone else clone your repository, then type:</p>
+<pre><code> git log</code></pre>
+<p>They should see all of the changes that <em>everyone</em> made. If they don’t, one or more of your commits failed, or someone forgot to push.</p></li>
+</ol>
+<p>You can repeat the above sequence of steps as many times as you want to. This is a good idea, in case something goes wrong: you can easily roll-back to the last commit, so if you commit often, rolling back will not result in much lost work.</p>
+<h2 id="summary">Summary</h2>
+<ol type="1">
+<li>Create a <code>five_forces.yml</code> file.</li>
+<li>Add your group and topic information.</li>
+<li>Analyze the five forces.</li>
+<li>State your conclusion about the competitive strategy to pursue.</li>
+<li><em>Validate</em> the YAML syntax, then <em>commit</em> and <em>push</em> the result by the deadline.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ol type="1">
+<li><p>At the end of this exercise, you should have at least one more completed task on your Trello board.</p></li>
+<li><p>You must commit <em>and</em> push your <code>five_forces.yml</code> before the deadline. You may do this as many times as necessary; the last commit before the deadline will be the one we mark.</p></li>
+<li><p>Your submission will be marked on correct syntax, spelling, grammar, and punctuation, as well as content. In particular, submissions with syntax errors will receive a token single digit mark.</p></li>
+</ol>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>If you don’t, the default git editor is <code>vi</code>, which is not very user friendly. If you end up in <code>vi</code>, do this: type ‘i’ (for insert), type your commit log message, pres the <code>ESC</code> key, the type ‘:wq’ (for command, write, quit).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

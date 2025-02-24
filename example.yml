@@ -1,0 +1,82 @@
+# This file is in YAML format.  You must ensure that the punctuation
+# and whitespace is preserved.  Also, beware of ':' and quotation mark
+# characters: these have meaning in YAML and so must be "escaped" by
+# enclosing the entire field in (single) quotation marks, or using the multi-line string formatting characters ('|' for preserving newlines, '>' for folding newlines).
+# See the YAML specification  (https://yaml.org/spec/1.2.2/) or the wikipedia page about YAML (https://en.wikipedia.org/wiki/YAML).
+# Also, Educative has a nice YAML tutorial (https://www.educative.io/blog/yaml-tutorial) that gives a nice rationale for learning YAML.
+
+# Do NOT use Windows Notepad to edit this file; use a real programming
+# editor like Notepad++ instead.
+
+# Write your group name exactly as it appears on Canvas.
+group: all_groups999
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: [Luke Bisee, Harly Werkin, Notta Klu, Ben Gonna, Abbey Sent, Tell M. Lyes]
+
+# Write a short description of your application
+topic: >
+  "Quick Jolt" Self-service coffee dispensing machine.
+
+# Write your assessment of the rivalry between existing competitors.
+competitor_rivalry: >
+ Quick-jolt is a niche product with no direct competition (yet).  So
+ the "competition" is conventional coffee bars such as Cafe Rore.  The
+ trade-off is range and customisability vs. convenience: do I want to
+ wait on queue so I can have something not available from Quick-jolt,
+ or a customized version, or can I live with what will be a limited
+ selection from Quick-jolt?
+
+# Write your assessment of the threat of new entrants.
+new_entrant_threat: >
+ There is a threat that Aramark might install their own version of
+ Quick Jolt. Otherwise, there are limited locations where new entrants
+ might penetrate.
+
+# Write your assessment of the threat of substitute products or services.
+substitute_threat: >
+ Quick-jolt is itself a substitute *service*: although the product
+ (coffee) is the same as what is available from Cafe Rore or
+ Starbucks, the method of sale is radically different.
+
+ A possible substitute would be a an app that allows customers to
+ place orders in advance, to be picked up later.  It's not clear this
+ would be a viable substitute during busy periods, as customers would
+ need to order well in advance to ensure their order is ready at the
+ desired time, which means the coffee may not be hot.
+
+# Write your assessment of the bargaining power of customers.  
+customer_power: >
+ Customers have several options on-campus, so they can "vote with
+ their feet" if they are not satisfied.
+
+ On the other hand, there many customers, so no individual customer
+ has much bargaining power; suppliers and competition dictate the
+ price.
+
+# Write your assessment of the bargaining power of suppliers.
+supplier_power: >
+ There a limited number of manufacturers who sell turn-key solutions
+ for unattended coffee dispensing with integrated payment systems, and
+ many more products for self-service coffee dispensing that would
+ require an add-on payment system.
+
+ So, with an add-on payment system, switching vendors involves the
+ cost of a new machine, plus installation.
+
+# Write your conclusion regarding the appropriate competitive strategy to pursue, based on
+# your assessments above.
+competitive_strategy: >
+ For a new company to enter the market via *cost leadership*, it would
+ need to have a sufficient labor cost saving to allow substantially
+ lower prices.  Also, it might be possible for a new company to
+ partner with a large national or multinational company for branding
+ rights: the company would pay a fee to have its brand on the vending
+ machine.  This could offset revenue lost due to lower prices.
+
+ In any case, a new company would *differentiate* its product by the delivery mode.
+ 
+ Finally, this product occupies a *niche* market for limited selection
+ of coffee drinks available on-demand (and after hours) via self-service.
+
