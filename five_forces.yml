@@ -9,14 +9,17 @@
 # editor like Notepad++ instead.
 
 # Write your group name exactly as it appears on Canvas.
-group: 
+group: 'group12'
 
 # Write the names of your group members as a comma-separated list
 # within the square brackets.
-members: []
+members: 
+    - 'SINNATHAMBY MATHEESHAN'
+    - 'UTHAYAPRITHAN SELLAIAH'
+    - 'MOHOMAD ANAS MOHOMAD MALIK'
 
 # Write a short description of your application
-topic: 
+topic: 'CAR SALES SERVICE'
 
 # For the following sections, you may write multiple paragraphs, each
 # with multiple lines, under the key. But be sure *every* line is
@@ -28,21 +31,44 @@ topic:
 # separated by blank lines, and *all* lines must be indented.
 
 # Write your assessment of the rivalry between existing competitors.
-competitor_rivalry: >
+competitor_rivalry: >   
+  Competition: There is strong rivalry in the car sales service industry. 
+  Dealerships frequently compete on the basis of inventory diversity, promotions, price, and customer service. 
+  Online car-selling platforms and larger chains pose a serious threat to local dealerships.
+  Differentiation: Although some dealerships attempt to set themselves apart from the competition by focussing on factors like location, customer experience, or after-sale service, many dealerships provide comparable vehicles and services, which fuels intense competition.
+  Economic factors: Competition in this sector may also be heightened by economic downturns, changes in customer tastes, and growing production and supply chain expenses.
 
 # Write your assessment of the threat of new entrants.
 new_entrant_threat: >
+  Barriers to entry: The car sales service industry has moderate barriers to entry. While it's not overly complex to open a small dealership, the need for significant capital to invest in inventory, showroom space, and establishing a brand presence can discourage new entrants.
+  Brand loyalty: Established brands like Ford, Toyota, and Mercedes-Benz create a strong customer base, which can deter new players.
+  Regulations: Car dealerships are subject to various regulations, including consumer protection laws, environmental laws, and vehicle safety standards, which can make it more difficult for new entrants.
 
 # Write your assessment of the threat of substitute products or services.
 substitute_threat: >
+  Used cars and other kinds of transportation: Online marketplaces or used car businesses might serve as alternatives to new cars. The need for new cars to sell can also be decreased by alternatives like leasing, public transit, and car-sharing services like Uber and Lyft.
+  Electric vehicles: As EVs become more accessible, consumers may start to favour them over conventional cars with internal combustion engines, which could lead to a replacement for conventional auto sales.
 
 # Write your assessment of the bargaining power of customers.  
 customer_power: >
+  Price sensitivity: Customers are extremely price-sensitive and have access to a multitude of information online. They have more leverage since they can quickly compare pricing from several dealerships.
+  Choice and other possibilities: With a large selection of cars coming from different manufacturers, purchasers have a lot of possibilities. 
+  Buyers now have more options, which increases their bargaining power, thanks to the growth of local classified sites and online platforms like Carvana.
+  Brand preference: Some consumers have strong brand loyalty, which may limit their ability to negotiate if they are prepared to pay more for a certain brand.
 
 # Write your assessment of the bargaining power of suppliers.
 supplier_power: >
+  Manufacturers of cars: The main suppliers to car dealers are manufacturers. 
+  These suppliers may have considerable negotiating power, particularly for brands with high demand or restricted supply. 
+  Popular models or luxury brands, for instance, may be subject to more stringent distribution regulations.
+  providers of aftermarket parts: Dealerships have additional options because there are many providers of components for maintenance and repair. 
+  But for some items, showrooms might be dependent on car manufacturers, which might give suppliers more negotiating leverage.
 
 # Write your conclusion regarding the appropriate competitive strategy to pursue, based on
 # your assessments above.
 competitive_strategy: >
-
+  Customer Experience: Concentrate on providing exceptional online and in-person customer care to make sure that the purchasing process is easy and stress-free.
+  Exclusive Product Offerings: Focus on specialised or in-demand car models that can appeal to discriminating buyers, such as hybrids, electric vehicles (EVs), or limited-edition vehicles.
+  Post-Sale Services: Offer alluring service packages that improve the total client experience and foster enduring connections, such as free maintenance, extended warranties, or accessory discounts.
+  A dealership can capitalise on customer demand for more individualised, value-driven experiences while reducing the intense competition and buyers' bargaining power by highlighting particularity. 
+  In a market that is extremely competitive, this approach will help the company build long-lasting competitive advantages and increase client retention.
